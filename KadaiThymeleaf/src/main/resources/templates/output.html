@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Assignment of Thymeleaf</title>
+</head>
+<body>
+    <h1>出力画面</h1>
+    <p th:text="'入力された値は「' + ${val} + '」です。'"></p>
+    <p><a th:href="@{/kadai/(previous=${val})}">入力画面へ戻る</a></p>
+</body>
+</html>
